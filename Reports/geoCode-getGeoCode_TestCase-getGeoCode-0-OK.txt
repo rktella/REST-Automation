@@ -1,0 +1,104 @@
+Status: OK
+Time Taken: 908
+Size: 1824
+Timestamp: Wed Mar 22 23:06:25 EDT 2017
+TestStep: getGeoCode
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: http://maps.googleapis.com
+Method: GET
+StatusCode: 200
+URL: http://maps.googleapis.com/maps/api/geocode/xml?address=1600%20Amphitheatre%20Parkway%2C%20Mountain%20View%2C%20CA&sensor=false
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_102)]
+Host: [maps.googleapis.com]
+Accept-Encoding: [gzip,deflate]
+
+GET http://maps.googleapis.com/maps/api/geocode/xml?address=1600%20Amphitheatre%20Parkway%2C%20Mountain%20View%2C%20CA&sensor=false HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: maps.googleapis.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_102)
+
+
+---------------- Response --------------------------
+X-Frame-Options: [SAMEORIGIN]
+Cache-Control: [public, max-age=86400]
+Server: [mafe]
+Access-Control-Allow-Origin: [*]
+Vary: [Accept-Language]
+Expires: [Fri, 24 Mar 2017 03:06:19 GMT]
+#status#: [HTTP/1.1 200 OK]
+X-XSS-Protection: [1; mode=block]
+Date: [Thu, 23 Mar 2017 03:06:19 GMT]
+Content-Type: [application/xml; charset=UTF-8]
+
+<GeocodeResponse>
+   <status>OK</status>
+   <result>
+      <type>street_address</type>
+      <formatted_address>1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA</formatted_address>
+      <address_component>
+         <long_name>1600</long_name>
+         <short_name>1600</short_name>
+         <type>street_number</type>
+      </address_component>
+      <address_component>
+         <long_name>Amphitheatre Parkway</long_name>
+         <short_name>Amphitheatre Pkwy</short_name>
+         <type>route</type>
+      </address_component>
+      <address_component>
+         <long_name>Mountain View</long_name>
+         <short_name>Mountain View</short_name>
+         <type>locality</type>
+         <type>political</type>
+      </address_component>
+      <address_component>
+         <long_name>Santa Clara County</long_name>
+         <short_name>Santa Clara County</short_name>
+         <type>administrative_area_level_2</type>
+         <type>political</type>
+      </address_component>
+      <address_component>
+         <long_name>California</long_name>
+         <short_name>CA</short_name>
+         <type>administrative_area_level_1</type>
+         <type>political</type>
+      </address_component>
+      <address_component>
+         <long_name>United States</long_name>
+         <short_name>US</short_name>
+         <type>country</type>
+         <type>political</type>
+      </address_component>
+      <address_component>
+         <long_name>94043</long_name>
+         <short_name>94043</short_name>
+         <type>postal_code</type>
+      </address_component>
+      <geometry>
+         <location>
+            <lat>37.4223658</lat>
+            <lng>-122.0843845</lng>
+         </location>
+         <location_type>ROOFTOP</location_type>
+         <viewport>
+            <southwest>
+               <lat>37.4210168</lat>
+               <lng>-122.0857335</lng>
+            </southwest>
+            <northeast>
+               <lat>37.4237148</lat>
+               <lng>-122.0830355</lng>
+            </northeast>
+         </viewport>
+      </geometry>
+      <place_id>ChIJ2eUgeAK6j4ARbn5u_wAGqWA</place_id>
+   </result>
+</GeocodeResponse>
